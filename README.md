@@ -32,3 +32,29 @@
 연구기록 YouTube -- > https://www.youtube.com/channel/UCLSgng38L1zVYUgOHEe1yOg
 
 ![KakaoTalk_20211117_181032963](https://user-images.githubusercontent.com/84003327/143807179-f56f3e64-c1ec-4cea-995a-69c2057d4059.jpg)
+
+
+-실행 절차
+
+라즈베리 안에서 실행 하세요
+
+```ros2 run opencv_cam opencv_cam_main --ros-args --params-file .ros/cv_cam_params.yaml```
+
+```ros2 launch turtlebot3_bringup robot.launch.py```
+
+```ros2 run my_rclpy_pkg lift_ctrl```
+
+사용자의 remote PC 에서 실행 하세요
+
+```ros2 run ros2_aruco aruco_node```
+
+camera_info가 늦게 나타나는 현상이 있습니다 천천히 실행하거나 ```ros2 topic list``` 를 실행해서 camera_info 를 확인하세요.
+
+```rqt```
+
+```ros2 run ar_track pub_tb3_pose2d```
+
+```ros2 run ar_track track_marker2 1```
+--> 마커 ID 가 [ 1 ] 인것을 찾는다
+
+
