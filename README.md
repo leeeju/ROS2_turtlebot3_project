@@ -9,7 +9,7 @@
 # 사용기술 : Open_CV, aruco marker, rviz2, python, Arduino Serial Bus
 
 # 팀원 : 이주현, 조민석
-
+  - 지도교수 : ground_Zero
 # 배경 
 
 ○ 무인지게차는 자동화를 통해 물류순환속도를 높이고, 재고공간을 효율적으로 활용하게 해 생산성을 높일 수 있는 것이 가장 큰 특징이다.
@@ -32,6 +32,8 @@
 연구기록 YouTube -- > https://www.youtube.com/channel/UCLSgng38L1zVYUgOHEe1yOg
 
 ![KakaoTalk_20211117_181032963](https://user-images.githubusercontent.com/84003327/143807179-f56f3e64-c1ec-4cea-995a-69c2057d4059.jpg)
+
+![node_graph](https://user-images.githubusercontent.com/84003327/143834486-d9819854-dd50-4132-b44b-c6767171a981.png)
 
 
 -실행 절차
