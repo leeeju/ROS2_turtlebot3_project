@@ -6,7 +6,7 @@
 # 환경구성 : Ubuntu20.04, ROS2 foxy, Turtlebot3
 
 
-# 시용기술 : Open_CV, aruco marker, rviz2, python, Arduino Serial Bus
+# 사용기술 : Open_CV, aruco marker, rviz2, python, Arduino Serial Bus
 
 # 팀원 : 이주현, 조민석
 
