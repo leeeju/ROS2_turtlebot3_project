@@ -59,3 +59,4 @@ void loop() { /* 여기가 main 문 ==> 1 누르면 올라가고 0을 누르면 
       Serial.println("stop"); _stop(); }
   }
 }
+
