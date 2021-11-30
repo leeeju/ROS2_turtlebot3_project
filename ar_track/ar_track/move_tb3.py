@@ -93,6 +93,3 @@ class MoveTB3(Node):
         tw.angular.z =  0.0;  self.pub_tw.publish(tw)
         print("rotate stop to   : %s" %(round(degrees(self.tb3pose.theta), 2)))
 
-
-        
-        
