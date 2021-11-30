@@ -2,7 +2,7 @@ import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSProfile
 from ros2_aruco_interfaces.msg import ArucoMarkers
-
+# aruco마커의 포즈 정보를 받아오기위한 노드입니다.
 class PubAruco(Node):
     """
     header:
