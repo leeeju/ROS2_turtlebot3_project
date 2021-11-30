@@ -170,7 +170,7 @@ class TrackMarker(Node):
                                         self.second_rotate_end = True                                
                                 
                                     else:
-                                        if self.align_finished == False:
+                                        if self.align_finished == False: # 초기 값은 False 이다 마카 를 찾기 위한 움지임 
                                             if   self.pose.position.x < -0.0175:
                                                 self.tw.angular.z =  0.125 * ANG_SPEED
                                                 self.pub_tw.publish(self.tw)
@@ -187,14 +187,19 @@ class TrackMarker(Node):
                                         else:
                                             if self.approach_marker_end == False:
                                                 print(self.pose.position.z)
-                                                dist = self.pose.position.z - 0.12
+                                                dist = self.pose.position.z - 0.12  # 마커앞 으로 직진하는 값
                                                 self.tb3.straight(dist)
                                                 self.approach_marker_end = True
                                                 print("----- approach to marker finished!")
-                                                self.lift.data = "lift_up"
+                                                self.lift.data = "lift_up"   # 목표에 도착해서 리프트를 들오 올리고 
                                                 self.publish_lift_ctrl(self.lift)
                                                 print("----- load palette finished!")
-                                                self.mission_complete = True
+                                                self.tb3.rotate(R * 2)      # 뒤로 돌아서 
+                                                self.tb3.straight(0.21)     # 이동한 후에 
+                                                self.lift.data = "lift_down" # 리프트를 내러 놓는다 
+                                                self.publish_lift_ctrl(self.lift)
+                                                self.tb3.straight(-0.165)  # 그 후 다시 후진 한다음
+                                                self.mission_complete = True # 시퀀스 종료
                     else:
                         self.target_found = False
         else:
