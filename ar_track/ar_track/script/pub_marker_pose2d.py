@@ -40,12 +40,12 @@ class MarkerPose(Node):
                     print(degrees(theta))
                     #self.print_marker_pose()
         
-    def get_theta(self, msg):
+    def get_theta(self, msg):#마커의 orientation x,y,z,w 의 값을 가져옴
         
         q = (msg.orientation.x, msg.orientation.y, msg.orientation.z, msg.orientation.w)
         
         euler = euler_from_quaternion(q)
-        
+         #오일러 방정식과 쿼터니언 방정식을 활용한 로봇의 위치와 마커의 위치를 찾기 위함
         theta = euler[1]
         '''
         # make theta from 0 to 360(deg)
