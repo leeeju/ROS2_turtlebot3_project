@@ -3,7 +3,7 @@ from rclpy.node import Node
 from rclpy.qos import QoSProfile
 from ar_track.move_tb3 import MoveTB3
 from math import radians, degrees, sqrt, atan2
-
+#움직임을 테스츠 할때 사용된 코드 입니다 
 
 def main(args=None):
     rclpy.init(args=args)
