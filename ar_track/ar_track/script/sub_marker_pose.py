@@ -1,16 +1,15 @@
 import rclpy, sys
 from rclpy.node import Node
 from rclpy.qos import QoSProfile
-#from turtlesim.msg import Pose
 from geometry_msgs.msg import Pose
 from ros2_aruco_interfaces.msg import ArucoMarkers
 
 TARGET_ID = int(sys.argv[1]) # argv[1] = id of target marker
-
+# 찾고자 하는 마커의 ID 정보를 입력해 줍니다
 class MarkerPose(Node):
     
     def __init__(self):
-        super().__init__('sub_marker_pose')
+        super().__init__('sub_marker_pose') # 노드의 생성
         qos_profile = QoSProfile(depth=10)
         
         # define subscriber
@@ -25,11 +24,11 @@ class MarkerPose(Node):
     def get_marker_pose(self, msg):
         if len(msg.marker_ids) != 0:
             for i in range(len(msg.marker_ids)):
-                if msg.marker_ids[i] == TARGET_ID:
+                if msg.marker_ids[i] == TARGET_ID: # 입력된 마커의 ID 를 찾을때 까지 반복하면서 탐색합니다 
                     self.pose = msg.poses[i]
                     self.print_marker_pose()
     
-    def print_marker_pose(self):
+    def print_marker_pose(self): # 마커의 포즈 정보를 프린트 합니다 
         print("position_x = %s" %(self.pose.position.x))
         print("position_y = %s" %(self.pose.position.y))
         print("position_z = %s" %(self.pose.position.z))
