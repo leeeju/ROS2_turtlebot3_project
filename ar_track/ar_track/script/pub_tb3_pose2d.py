@@ -4,7 +4,7 @@ from rclpy.qos import QoSProfile
 from turtlesim.msg import Pose
 from nav_msgs.msg import Odometry
 from math import radians, degrees, pi
-from tf_transformations import euler_from_quaternion#, quaternion_from_euler
+from tf_transformations import euler_from_quaternion  #, quaternion_from_euler
 
 class TB3Pose2D(Node):
 
@@ -77,7 +77,7 @@ class TB3Pose2D(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = TB3Pose2D()
+    node = TB3Pose2D()  #위에서 선언한 클라스
     
     try:
         rclpy.spin(node)
