@@ -8,6 +8,7 @@ from ros2_aruco_interfaces.msg import ArucoMarkers
 from math import degrees, radians, sqrt, sin, cos, pi
 from tf_transformations import euler_from_quaternion#, quaternion_from_euler
 from ar_track.move_tb3 import MoveTB3
+import time
 
 TARGET_ID = int(sys.argv[1]) # argv[1] = id of target marker
 # 마커의 포즈정보를 받아와서 터틀봇을 움직이는 코드 입니다, 핵심코드
@@ -138,17 +139,17 @@ class TrackMarker(Node):
 
                                 angle = R - self.th_ref                                   # R = 1.5708( 90도 )
 
-                                if angle > R:                                             #angle(각도)가 90보다 크거나 같거나 작으면
+                                if angle > R:                                             # angle(각도)가 90보다 크거나 같거나 작으면
                                     angle = pi - angle
 
-                                if   self.th_ref > radians( 10):                          #좌측으로 회전 10도
+                                if   self.th_ref > radians( 10):                          # 좌측으로 회전 10도
                                     self.tb3.rotate( angle)
-                                elif self.th_ref < radians(-10):                          #우측으로 회전 10도
+                                elif self.th_ref < radians(-10):                          # 우측으로 회전 10도
                                     self.tb3.rotate(-angle)
                                 else:   pass
 
                                 print("----- 1st rotation finished!")
-                                self.first_rotate_end = True                              #정렬이 완료됨
+                                self.first_rotate_end = True                              # 정렬이 완료됨
 
                             else:
                                 if self.move_front_marker == False:                       # 마커의 앞까지 정렬을 대기 한다
@@ -193,11 +194,13 @@ class TrackMarker(Node):
                                                 self.lift.data = "lift_up"
                                                 self.publish_lift_ctrl(self.lift)              # '/lift_ctrl_msg'
                                                 print("----- load palette finished!")
+                                                time.sleep(5)                                  # 5초 대기
                                                 self.tb3.rotate(R * 2)                         # 뒤로 돌아서
                                                 self.tb3.straight(0.21)                        # 직진 이동 후
-                                                self.lift.data = "lift_down"
+                                                self.lift.data = "lift_down"                   # 물건을 내려놓고
                                                 self.publish_lift_ctrl(self.lift)              # '/lift_ctrl_msg'
-                                                self.tb3.straight(-0.165)                      # 물건을 내려 놓으면서 뒤로 다시 후진한다 
+                                                time.sleep(5)                                  # 5초 대기
+                                                self.tb3.straight(-0.165)                      # 후진한다 
                                                 self.mission_complete = True
 
                     else:
