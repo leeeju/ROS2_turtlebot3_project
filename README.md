@@ -23,7 +23,7 @@
 # 주요기능
  OpenCV 기반의 aruco marker를 사용하여 마커의 2D Pose 정보를 읽어와 터틀봇을 마커의 중앙으로 위치 시키고 Arduino Serial을 사용하여 서보 모터를 컨트롤하여 미션을 수행합니다.
  
- 영상보기 https://www.youtube.com/watch?v=5JBPTG4YDPo&t=8s
+ - 구동 영상보기 https://www.youtube.com/watch?v=5JBPTG4YDPo&t=8s
  
 ![캡처](https://user-images.githubusercontent.com/84003327/143807282-f6518f57-8946-497a-b856-36948122f147.PNG)
 
