@@ -8,7 +8,7 @@ const unsigned int pinPWM  =  6;
 int pwmValue  =  255; /* 회전값은 0 ~ 255 까지 있다 */
 
 void setup() {
-  pinMode(pinSwDn, INPUT_PULLUP); /* 아두니오 보드에 있는 명령어 */ 
+  pinMode(pinSwDn, INPUT_PULLUP); /* 아두이노 보드에 있는 명령어 */ 
   pinMode(pinSwUp, INPUT_PULLUP);
   pinMode(pinDirA, OUTPUT      );
   pinMode(pinDirB, OUTPUT      );
