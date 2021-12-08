@@ -2,9 +2,9 @@
 <package format="3">
 <name>ar_track</name>
 <version>0.0.0</version>
-<description>TODO: Package description</description>
+<description>TODO: Lee ju hyun</description>
 <maintainer email="02stu4@gmail.com">ground0</maintainer>
-<license>TODO: License declaration</license>
+<license>TODO: Apache License</license>
 <depend>rclpy</depend>
 <test_depend>ament_copyright</test_depend>
 <test_depend>ament_flake8</test_depend>
