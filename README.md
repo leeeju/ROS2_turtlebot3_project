@@ -3,14 +3,13 @@
 
 # 프로제트 기간 : 2021. 11. 01 ~ 2021. 11. 29
 
-# 환경구성 : Ubuntu20.04, ROS2 foxy, Turtlebot3
+## 환경구성 : Ubuntu20.04, ROS2 foxy, Turtlebot3
 
+## 사용기술 : Open_CV, aruco marker, rviz2, python, Arduino Serial Bus
 
-# 사용기술 : Open_CV, aruco marker, rviz2, python, Arduino Serial Bus
-
-# 팀원 : 이주현, 조민석
+### 팀원 : 이주현, 조민석
   - 지도교수 : ground_Zero
-# 배경 
+## 배경 
 
 ○ 무인지게차는 자동화를 통해 물류순환속도를 높이고, 재고공간을 효율적으로 활용하게 해 생산성을 높일 수 있는 것이 가장 큰 특징이다.
 
