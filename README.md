@@ -1,13 +1,13 @@
 
 # ROS2_turtlebot3_fork lift_project
 
-# 프로제트 기간 : 2021. 11. 01 ~ 2021. 11. 29
+## 프로제트 기간 : 2021. 11. 01 ~ 2021. 11. 29
 
-## 환경구성 : Ubuntu20.04, ROS2 foxy, Turtlebot3
+### 환경구성 : Ubuntu20.04, ROS2 foxy, Turtlebot3
 
-## 사용기술 : Open_CV, aruco marker, rviz2, python, Arduino Serial Bus
+### 사용기술 : Open_CV, aruco marker, rviz2, python, Arduino Serial Bus
 
-### 팀원 : 이주현, 조민석
+#### 팀원 : 이주현, 조민석
   - 지도교수 : ground_Zero
 ## 배경 
 
