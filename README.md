@@ -59,7 +59,7 @@ camera_info가 늦게 나타나는 현상이 있습니다 천천히 실행하거
 
 ```ros2 run ar_track pub_tb3_pose2d```
 
-```ros2 run ar_track track_marker2 1```
+```ros2 run ar_track track_marker 1```
 --> 마커 ID 가 [ 1 ] 인것을 찾는다
 
 
