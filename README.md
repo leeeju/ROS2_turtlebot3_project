@@ -9,6 +9,7 @@
 
 #### 팀원 : 이주현, 조민석
   - 지도교수 : ground_Zero
+
 ## 배경 
 
 ○ 무인지게차는 자동화를 통해 물류순환속도를 높이고, 재고공간을 효율적으로 활용하게 해 생산성을 높일 수 있는 것이 가장 큰 특징이다.
@@ -22,8 +23,8 @@
 # 주요기능
  OpenCV 기반의 aruco marker를 사용하여 마커의 2D Pose 정보를 읽어와 터틀봇을 마커의 중앙으로 위치 시키고 Arduino Serial을 사용하여 서보 모터를 컨트롤하여 미션을 수행합니다.
  
- - 구동 영상보기 https://www.youtube.com/watch?v=5JBPTG4YDPo&t=8s
- - 핵심코드 track_marker.py 
+ - 구동 영상보기 : https://www.youtube.com/watch?v=5JBPTG4YDPo&t=8s
+ - 핵심코드 : track_marker.py 
  
 ![캡처](https://user-images.githubusercontent.com/84003327/143807282-f6518f57-8946-497a-b856-36948122f147.PNG)
 
