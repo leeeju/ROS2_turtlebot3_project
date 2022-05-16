@@ -4,7 +4,7 @@
   <name>ros2_shared</name>
   <version>0.1.0</version>
   <description>Shared code for ROS2</description>
-  <maintainer email="ptrmu@outlook.com">Peter Mullen</maintainer>
+  <maintainer email="02stu4@gmail.com">GND1</maintainer>
   <license>BSD</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
