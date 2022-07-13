@@ -7,7 +7,7 @@
 
 ### 사용기술 : Open_CV, aruco marker, rviz2, python, Arduino Serial Bus
 
-#### 팀원 : 이주현, 조민석
+#### 팀원 : 이주현
   - 지도교수 : ground_Zero
 
 ## 배경 
