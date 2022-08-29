@@ -38,6 +38,11 @@
 
 ![node_graph](https://user-images.githubusercontent.com/84003327/143834486-d9819854-dd50-4132-b44b-c6767171a981.png)
 
+![asdasd](https://user-images.githubusercontent.com/84003327/187121121-b018b282-5842-4064-b12c-6dfe321c4f0e.png)
+
+![asd](https://user-images.githubusercontent.com/84003327/187121139-df380148-ae36-4f37-90f0-337e4158e728.png)
+
+
 
 -실행 절차
 
